@@ -312,13 +312,13 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__icon.mail {
+  .contact__icon.mail-icon {
     width: 16px;
     height: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__icon.phone {
+  .contact__icon.phone-icon {
     width: 10px;
     height: 16px;
   }
