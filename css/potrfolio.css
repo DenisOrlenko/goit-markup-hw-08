@@ -323,6 +323,23 @@ img {
   margin-right: 8px;
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 .button-menu {
   display: flex;
@@ -453,6 +470,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .directions {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .directions__list {
   display: flex;
@@ -581,7 +604,7 @@ img {
 
 .example__title {
   margin-bottom: 4px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 2;
   font-weight: 700;
   letter-spacing: 0.06em;

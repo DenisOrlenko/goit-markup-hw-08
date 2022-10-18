@@ -358,6 +358,23 @@ img {
   margin-right: 8px;
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 .button-menu {
   display: flex;
@@ -804,7 +821,7 @@ img {
     gap: var(--list-gap);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature__list {
     flex-wrap: wrap;
   }
@@ -818,6 +835,11 @@ img {
 @media screen and (min-width: 1200px) {
   .feature__item {
     width: calc((100% - 3 * var(--list-gap)) / 4);
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

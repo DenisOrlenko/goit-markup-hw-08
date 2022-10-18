@@ -306,6 +306,23 @@ img {
   margin-right: 8px;
   fill: currentColor;
 }
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon.phone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 .button-menu {
   display: flex;
