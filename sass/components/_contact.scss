@@ -45,4 +45,36 @@
   margin-right: 8px;
 
   fill: currentColor;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+
+  &.mail {
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &.phone {
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+  }
 }
+
+// .contact__icon.mail {
+//   @media screen and (min-width: 1200px) {
+//     width: 16px;
+//     height: 12px;
+//   }
+// }
+
+// .contact__icon.phone {
+//   @media screen and (min-width: 1200px) {
+//     width: 10px;
+//     height: 16px;
+//   }
+// }

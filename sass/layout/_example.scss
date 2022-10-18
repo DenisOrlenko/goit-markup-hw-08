@@ -78,7 +78,7 @@
 .example__title {
   margin-bottom: 4px;
 
-  @include font($fz: 20px, $lh: 2, $fw: 700, $ls: 0.06em, $color: var(--title-text-color));
+  @include font($fz: 18px, $lh: 2, $fw: 700, $ls: 0.06em, $color: var(--title-text-color));
 }
 
 .example__text {

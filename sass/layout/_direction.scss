@@ -1,5 +1,9 @@
 .directions {
   @include padding-vertical(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include padding-vertical(94px, 94px);
+  }
 }
 
 .directions__list {

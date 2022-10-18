@@ -7,7 +7,7 @@
     @include gapFlex($gap: var(--list-gap));
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
   }
 }
@@ -19,6 +19,12 @@
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * var(--list-gap)) / 4);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
