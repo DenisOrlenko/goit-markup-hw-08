@@ -1,0 +1,53 @@
+/* фон к section */
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+.team__list {
+  @media screen and (min-width: 768px) {
+    @include gapFlex($gap: var(--list-gap));
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
+
+/* фон к элементу списка */
+.team-item {
+  @extend %team-item-decoration;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - var(--list-gap)) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * var(--list-gap)) / 4);
+  }
+}
+
+.team-item__content {
+  @include padding-vertical(30px, 24px);
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+/* h3 оформление -2 */
+.team-item__title {
+  margin-bottom: 10px;
+
+  @include font($fz: 16px, $lh: 1.19, $fw: 500, $ls: 0.03em, $color: var(--title-text-color));
+
+  text-align: center;
+}
+
+/* p - оформление-2 */
+.team-item__text {
+  margin-bottom: 16px;
+
+  @include font($fz: 16px, $lh: 1.19, $fw: 400, $ls: 0.03em, $color: var(--primary-text-color));
+
+  text-align: center;
+}

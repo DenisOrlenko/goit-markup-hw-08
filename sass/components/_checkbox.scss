@@ -1,0 +1,56 @@
+.checkbox {
+  max-width: 423px;
+  margin-bottom: 30px;
+  padding-left: 12px;
+
+  @include font($fz: 12px, $lh: 1.17, $fw: 400, $ls: 0.03em, $color: var(--primary-text-color));
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/* visually-hidden - декоративного оформления */
+.checkbox__input {
+  @extend %input-visually-hidden;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__icon-thumb {
+  @include centerFlex();
+
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+}
+
+.checkbox__icon {
+  fill: transparent;
+  @include circle-bordered(var(--modal-svg-fill), 2px);
+
+  transition: border-color var(--duration-timing-function);
+
+  .checkbox__input:checked + .checkbox__label & {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+  }
+
+  .checkbox__input:focus + .checkbox__label & {
+    border-color: var(--accent-color);
+  }
+}
+
+.checkbox__link {
+  margin-left: 5px;
+
+  color: var(--accent-color);
+}

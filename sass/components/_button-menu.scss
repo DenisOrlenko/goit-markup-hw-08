@@ -1,0 +1,25 @@
+.button-menu {
+  @include centerFlex();
+  padding: 0;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--primary-svg-bg-color);
+  border-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  // icon-menu
+  &__icon {
+    display: flex;
+  }
+}
