@@ -63,8 +63,14 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .visually-hidden {
@@ -386,10 +392,16 @@ img {
   top: 0;
   width: 100%;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 15px 48px 15px;
   background-color: var(--primary-bg-color);
   transform: translateX(100%);
   transition: transform var(--duration-timing-function);
+}
+@media screen and (min-width: 480px) {
+  .menu-container {
+    padding-left: 40px;
+    padding-right: 80px;
+  }
 }
 
 .menu-container.is-open {
@@ -399,7 +411,12 @@ img {
 }
 
 .mobile__nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
+}
+@media screen and (min-width: 480px) {
+  .mobile__nav {
+    margin-bottom: 302px;
+  }
 }
 
 .mobile__nav-item:not(:last-child) {
@@ -408,7 +425,7 @@ img {
 
 .mobile__nav-link {
   display: block;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 1.18;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -416,12 +433,25 @@ img {
   transition: color var(--duration-timing-function);
   /* site-nav цвет ссылки при наведении */
 }
+@media screen and (min-width: 480px) {
+  .mobile__nav-link {
+    font-size: 40px;
+  }
+}
 .mobile__nav-link:hover, .mobile__nav-link:focus {
+  color: var(--accent-color);
+}
+.mobile__nav-link--current {
   color: var(--accent-color);
 }
 
 .mobile__contact-list {
-  margin-bottom: auto;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 480px) {
+  .mobile__contact-list {
+    margin-bottom: auto;
+  }
 }
 
 .mobile__contact-item:first-child {
@@ -430,40 +460,73 @@ img {
 
 .mobile__contact-link {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.18;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 480px) {
+  .mobile__contact-link {
+    font-size: 24px;
+  }
+}
 .mobile__contact-link:hover, .mobile__contact-link:focus {
   color: var(--accent-color);
 }
 .mobile__contact-item:first-child > .mobile__contact-link {
-  font-size: 34px;
+  font-size: 30px;
+  color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile__contact-item:first-child > .mobile__contact-link {
+    font-size: 34px;
+  }
 }
 
 .mobile__social-list {
   display: flex;
-  gap: 10px;
+  gap: 5px;
+}
+@media screen and (min-width: 480px) {
+  .mobile__social-list {
+    gap: 10px;
+  }
+}
+
+.mobile__social-item {
+  display: flex;
+  align-items: center;
 }
 
 .mobile__social-link {
   display: inline-flex;
-  font-size: 18px;
+  align-items: center;
+  font-size: 15px;
   line-height: 1.22;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile__social-link {
+    font-size: 18px;
+  }
 }
 
 .mobile__social-item:not(:last-child) .mobile__social-link::after {
   content: "";
   display: inline-block;
   width: 1px;
-  height: 22px;
-  margin-left: 10px;
+  height: 18px;
+  margin-left: 5px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .mobile__social-item:not(:last-child) .mobile__social-link::after {
+    height: 22px;
+    margin-left: 10px;
+  }
 }
 
 .directions {
@@ -640,6 +703,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
     flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     padding-right: 89px;
     padding-left: 76px;
@@ -759,8 +823,15 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .sign-up__field {
+    margin-bottom: 20px;
+  }
+}
+
 .sign-up__label {
   display: block;
+  margin-bottom: 20px;
   color: var(--secondary-text-color);
 }
 
@@ -768,8 +839,6 @@ img {
   min-width: 100%;
   height: 50px;
   padding-left: 16px;
-  position: relative;
-  top: 20px;
   color: var(--secondary-text-color);
   background-color: var(--footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
