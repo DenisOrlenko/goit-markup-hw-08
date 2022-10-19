@@ -17,6 +17,12 @@
 .team-item {
   @extend %team-item-decoration;
 
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: var(--list-gap);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: calc((100% - var(--list-gap)) / 2);
   }
