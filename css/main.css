@@ -193,14 +193,12 @@ img {
   position: relative;
   /* Серая линия под HEADER - absolute */
 }
-@media screen and (min-width: 768px) {
-  .page-header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    border-bottom: 1px solid var(--border-under-header);
-    width: 100%;
-  }
+.page-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid var(--border-under-header);
+  width: 100%;
 }
 
 .page-header__container {
@@ -630,7 +628,12 @@ img {
 
 /* button применение формления к кнопке */
 .hero__button {
-  min-width: 216px;
+  min-width: 200px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    min-width: 216px;
+  }
 }
 
 .button {
