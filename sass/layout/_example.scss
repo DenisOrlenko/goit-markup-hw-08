@@ -1,6 +1,8 @@
 .example__list {
-  @include gapFlex();
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    @include gapFlex();
+    flex-wrap: wrap;
+  }
 }
 
 .example__item {
@@ -11,6 +13,12 @@
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: var(--list-gap);
+    }
   }
 }
 
