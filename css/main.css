@@ -2,6 +2,9 @@
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.modal-open {
@@ -655,7 +658,7 @@ img {
 .backdrop {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--backdrop-bg);
   opacity: 1;

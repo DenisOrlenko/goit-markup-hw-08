@@ -2,6 +2,9 @@
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.modal-open {
